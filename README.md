@@ -20,7 +20,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:300](http://localhost:300). The home page fetches
+Open [http://localhost:3000](http://localhost:3000). The home page fetches
 and renders live data from PokeAPI, so you'll need an internet connection.
 
 Other useful commands:
