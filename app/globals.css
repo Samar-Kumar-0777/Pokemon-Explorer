@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Keyboard accessibility: a clear, consistent focus ring everywhere */
+:focus-visible {
+  outline: 2px solid #ffcb05;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Slim, themed scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #12141c;
+}
+::-webkit-scrollbar-thumb {
+  background: #313850;
+  border-radius: 999px;
+  border: 2px solid #12141c;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3d4562;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
